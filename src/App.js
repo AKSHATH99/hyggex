@@ -16,7 +16,7 @@ function App() {
 
   // ----------------------------------------------------------------
   return (
-    <div className=" phone:ml-0 ml-16">
+    <div className=" phone:ml-1 ml-16">
 
 
       {/*---------------------------- HEADER---------------------------------*/}
@@ -203,7 +203,7 @@ function App() {
               Can education flashcards be used for all age groups?
             </p>
             <img
-              className="ml-auto h-5 w-5 hover:cursor-pointer "
+              className="ml-auto mr-10 phone:mr-1 h-5 w-5 p-1 hover:cursor-pointer "
               onClick={() => togglebox1(!box1)}
               src="/images/downarrow.png"
             />
@@ -220,7 +220,7 @@ function App() {
               Can education flashcards be used for all age groups?
             </p>
             <img
-              className="ml-auto h-5 w-5 hover:cursor-pointer "
+              className="ml-auto p-1 mr-10 phone:mr-1 h-5 w-5 hover:cursor-pointer "
               onClick={() => togglebox2(!box2)}
               src="/images/downarrow.png"
             />
@@ -237,7 +237,7 @@ function App() {
               Can education flashcards be used for all age groups?
             </p>
             <img
-              className="ml-auto h-5 w-5 hover:cursor-pointer "
+              className="ml-auto mr-10 phone:mr-1  h-5 w-5 p-1 hover:cursor-pointer "
               onClick={() => togglebox3(!box3)}
               src="/images/downarrow.png"
             />
