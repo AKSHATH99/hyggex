@@ -26,13 +26,13 @@ function App() {
         </div>
       )}
 
-        <div className=" rounded-lg flex justify-between ml-96 w-max items-center text-xl phone:hidden">
-          <p className="ml-2">Home</p>
-          <p className="ml-20">Flashcard</p>
-          <p className="ml-20">Contact</p>
-          <p className="ml-20">FAQ</p>
+        <div className=" rounded-lg flex justify-between ml-72 w-max items-center text-md phone:hidden">
+          <p className="ml-2 hover:cursor-pointer hover:text-blue-700 hover:font-bold">Home</p>
+          <p className="ml-20 hover:cursor-pointer hover:text-blue-700 hover:font-bold">Flashcard</p>
+          <p className="ml-20 hover:cursor-pointer hover:text-blue-700 hover:font-bold">Contact</p>
+          <p className="ml-20 hover:cursor-pointer hover:text-blue-700 hover:font-bold">FAQ</p>
 
-          <div className="ml-20 mr-2 bg-gradient-to-b from-blue-900 to-blue-500 text-white p-4 rounded-3xl w-28 h-10 flex items-center justify-center">
+          <div className="ml-20 mr-2 hover:cursor-pointer bg-gradient-to-b from-blue-900 to-blue-500 text-white p-4 rounded-3xl w-28 h-10 flex items-center justify-center">
             Login
           </div>
         </div>
@@ -45,11 +45,11 @@ function App() {
           src="/images/home.png"
         />
         <img className="ml-3 h-3 w-3 mt-[5px] " src="/images/leftarrow.png"/>{" "}
-        <p className="ml-3 phone:text-sm">Flashcard</p>
-        <img className="ml-3   h-3 w-3 mt-[5px]" src="/images/leftarrow.png"/>
-        <p className="ml-3 phone:text-sm">Mathematics</p>
+        <p className="ml-3 phone:text-sm hover:cursor-pointer  hover:text-blue-700">Flashcard</p>
+        <img className="ml-3   h-3 w-3 mt-[5px] " src="/images/leftarrow.png"/>
+        <p className="ml-3 phone:text-sm hover:cursor-pointer  hover:text-blue-700">Mathematics</p>
         <img className="ml-3 h-3 w-3 mt-[5px]" src="/images/leftarrow.png"/>
-        <p className="ml-3 phone:text-sm  "> Relations and Functions</p>
+        <p className="ml-3 phone:text-sm hover:cursor-pointer  hover:text-blue-700 "> Relations and Functions</p>
       </div>
 
       {/* HEADING  */}
@@ -58,22 +58,22 @@ function App() {
           Relations and Functions (Mathematics)
         </p>
       </div>
-      <div className=" phone:ml-2 ml-72 mt-14">
+      <div className=" phone:ml-2 ml-60 mt-14">
         <div className="flex text-xl font-bold phone:text-sm ">
-          <p className="mx-10 phone:mx-4 text-blue-700 underline">Study </p>
-          <p className="mx-10 phone:mx-4 text-gray-500">Quiz</p>
-          <p className="mx-10 phone:mx-4 text-gray-500">Test</p>
-          <p className="mx-10 phone:mx-4 text-gray-500">Game</p>
-          <p className="mx-10 phone:mx-4 text-gray-500">Others</p>
+          <p className="mx-10 hover:text-blue-700 hover:cursor-pointer hover:underline phone:mx-4 text-blue-700 underline">Study </p>
+          <p className="mx-10 hover:text-blue-700 hover:cursor-pointer hover:underline phone:mx-4 text-gray-500">Quiz</p>
+          <p className="mx-10 hover:text-blue-700 hover:cursor-pointer hover:underline phone:mx-4 text-gray-500">Test</p>
+          <p className="mx-10 hover:text-blue-700 hover:cursor-pointer hover:underline phone:mx-4 text-gray-500">Game</p>
+          <p className="mx-10 hover:text-blue-700 hover:cursor-pointer hover:underline phone:mx-4 text-gray-500">Others</p>
         </div>
 
         {/* QUESTION CARD */}
-        <div className="bg-gradient-to-b from-blue-900 to-blue-500 text-white w-[712px] phone:w-[380px]   h-96 mt-8 rounded-3xl">
+        <div  className="  bg-gradient-to-b from-blue-900 to-blue-500 text-white w-[712px] phone:w-[380px]   h-96 mt-8 rounded-3xl">
           <div className="flex">
-            <img src="/images/light-bulb.png" className="w-8 h-8  mt-10 ml-5" />
+            <img src="/images/light-bulb.png" className=" hover:cursor-pointer w-8 h-8  mt-10 ml-5" />
             <img
               src="/images/volume2.png"
-              className="w-7 h-7 ml-[600px]  mt-12"
+              className=" hover:cursor-pointer w-7 h-7 phone:ml-64 ml-[600px]  mt-12"
             />
           </div>
           <div className="mt-28 ml-48 text-4xl phone:text-2xl phone:ml-24">
@@ -84,24 +84,24 @@ function App() {
 
         <div className="flex mt-10   ">
           <img
-            className="ml-5 w-7 h-7 phone:w-5 phone:h-5 mt-3 "
+            className="ml-5 w-7 h-7 hover:cursor-pointer  phone:w-5 phone:h-5 mt-3 "
             src="/images/redo.png"
           />
           <div className=" phone:ml-14 ml-52 rounded-full bg-gradient-to-b from-blue-900 to-blue-500  w-10 flex items-center justify-center  h-10">
             <img
-              className="  phone:w-5 phone:h-5 "
+              className=" hover:cursor-pointer  phone:w-5 phone:h-5 "
               src="/images/left.png"
             />
           </div>
           <p className="ml-5 font-bold text-xl phone:mt-1 mt-2 ">0/10</p>
           <div className="ml-5 rounded-full bg-gradient-to-b from-blue-900 to-blue-500 w-10 flex items-center justify-center  h-10">
             <img
-              className=" phone:w-5 phone:h-5 "
+              className="hover:cursor-pointer  phone:w-5 phone:h-5 "
               src="/images/next.png"
             />
           </div>
           <img
-            className="ml-56 mt-3 w-6 h-6 phone:ml-16 phone:w-4 phone:h-4 "
+            className="ml-56 mt-3 hover:cursor-pointer  w-6 h-6 phone:ml-16 phone:w-4 phone:h-4 "
             src="/images/expand.png"
           />
         </div>
@@ -125,8 +125,8 @@ function App() {
         </div>
 
         <div>
-          <div className="flex phone:absolute  ml-[850px] phone:ml-20 mt-6">
-            <div className="bg-blue-700 rounded-full flex items-center justify-center w-10 h-10 phone:w-5 phone:h-5 mt-1">
+          <div className="flex phone:absolute  ml-[680px] phone:ml-20 mt-6">
+            <div className="hover:cursor-pointer  bg-blue-700 rounded-full flex items-center justify-center w-10 h-10 phone:w-5 phone:h-5 mt-1">
               <img src="/images/plus.png" />
             </div>
             <p className="text-xl ml-2 phone:mt-1 mt-3 text-blue-600 font-semibold phone:text-sm">
@@ -145,19 +145,19 @@ function App() {
             <p className="p-5">
               Can education flashcards be used for all age groups?
             </p>
-            <img className="ml-auto h-5 w-5" src="/images/downarrow.png" />
+            <img className="ml-auto h-5 w-5 hover:cursor-pointer " src="/images/downarrow.png" />
           </div>
           <div className="flex border-2 border-blue-500 w-[800px] items-center rounded-xl mt-5 phone:w-44">
             <p className="p-5">
               Can education flashcards be used for all age groups?
             </p>
-            <img className="ml-auto h-5 w-5" src="/images/downarrow.png" />
+            <img className="ml-auto h-5 w-5 hover:cursor-pointer " src="/images/downarrow.png" />
           </div>
           <div className="flex border-2 border-blue-500 w-[800px] items-center rounded-xl mt-5 mb-20 phone:w-44">
             <p className="p-5">
               Can education flashcards be used for all age groups?
             </p>
-            <img className="ml-auto h-5 w-5" src="/images/downarrow.png" />
+            <img className="ml-auto h-5 w-5 hover:cursor-pointer " src="/images/downarrow.png" />
           </div>
         </div>
       </div>
