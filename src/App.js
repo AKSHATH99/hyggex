@@ -1,9 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
-import SideMenu from "./SideMenu";
-import Accordian1 from "./Accordian1";
-import Accordian2 from "./Accordian2";
-import Accordian3 from "./Accordian3";
+import SideMenu from "./components/SideMenu";
+import Accordian1 from "./components/Accordian1";
+import Accordian2 from "./components/Accordian2";
+import Accordian3 from "./components/Accordian3";
 import { useState } from "react";
 
 
@@ -88,6 +88,8 @@ function App() {
           Relations and Functions (Mathematics)
         </p>
       </div>
+
+      {/* --------------------SECTIONS--------- */}
       <div className=" phone:ml-2 ml-60 mt-14">
         <div className="flex text-xl font-bold phone:text-sm ">
           <p className="mx-10 hover:text-blue-700 hover:cursor-pointer hover:underline phone:mx-4 text-blue-700 underline">
