@@ -12,6 +12,7 @@ function App() {
   const [box1, togglebox1] = useState(false);
   const [box2, togglebox2] = useState(false);
   const [box3, togglebox3] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div className=" phone:ml-0 ml-16">
@@ -103,7 +104,14 @@ function App() {
             <img
               src="/images/light-bulb.png"
               className=" hover:cursor-pointer w-8 h-8  mt-10 ml-5"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
             />
+            {isHovered && (
+              <p className="absolute text-black bg-white   p-2 rounded shadow-md mt-20 text-xs  w-max ml-10">
+                Try calculating  using BODMAS rule !!
+              </p>
+            )}
             <img
               src="/images/volume2.png"
               className=" hover:cursor-pointer w-7 h-7 phone:ml-64 ml-[600px]  mt-12"
