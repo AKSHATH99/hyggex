@@ -6,7 +6,7 @@ import Accordian2 from "./Accordian2";
 import Accordian3 from "./Accordian3";
 import { useState } from "react";
 
-// import myImage from "./28.png"
+
 function App() {
   const [menu, togglemenu] = useState(false);
   const [box1, togglebox1] = useState(false);
@@ -14,9 +14,13 @@ function App() {
   const [box3, togglebox3] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
+  // ----------------------------------------------------------------
   return (
     <div className=" phone:ml-0 ml-16">
-      {/* HEADER */}
+
+
+      {/*---------------------------- HEADER---------------------------------*/}
+      
       <div className="flex ">
         <img
           className="w-56 h-20 p-5 phone:w-40 phone:h-16 mt-4 "
@@ -26,6 +30,7 @@ function App() {
           <img src="/images/hambuger.png" onClick={() => togglemenu(!menu)} />
         </div>
 
+        {/* ---------SIDEBAR--------- */}
         {menu && (
           <div className="absolute top-0 right-0 z-50">
             <SideMenu />
@@ -52,7 +57,10 @@ function App() {
         </div>
       </div>
 
-      {/* NAV LINKS */}
+
+      {/*--------------------- NAV LINKS ---------------------------------------------------*/}
+
+
       <div className=" phone:ml-3 mt-11 ml-4 flex">
         <img
           className="  phone:w-4 phone:h-4 h-5 w-5 "
@@ -73,7 +81,8 @@ function App() {
         </p>
       </div>
 
-      {/* HEADING  */}
+      {/*-------------------------------SIDE HEADINGS -----------------------------*/}
+
       <div className="ml-4 ">
         <p className="mt-14 text-blue-700  font-bold text-2xl phone:text-base ">
           Relations and Functions (Mathematics)
@@ -98,7 +107,8 @@ function App() {
           </p>
         </div>
 
-        {/* QUESTION CARD */}
+        {/*------------------------------- QUESTION CARD------------------------- */}
+
         <div className="  bg-gradient-to-b from-blue-900 to-blue-500 text-white w-[712px] phone:w-[380px]   h-96 mt-8 rounded-3xl">
           <div className="flex">
             <img
@@ -121,6 +131,8 @@ function App() {
             <p>9 + 6 + 7x - 2x - 3</p>
           </div>
         </div>
+
+          {/* ------------ICONS-------------------- */}
 
         <div className="flex mt-10   ">
           <img
@@ -147,7 +159,8 @@ function App() {
         </div>
       </div>
 
-      {/* --------------- */}
+      {/* ---------------------------FOOTER--------------------------- */}
+
       <div className="flex mt-20 ml-5 ">
         <div className="flex">
           <div className="rounded-full shadow-2xl flex items-center justify-center w-20 h-20 phone:w-10 phone:h-10 phone:mt-3 ">
@@ -176,7 +189,9 @@ function App() {
         </div>
       </div>
 
-      {/* FAQ SECTION */}
+      {/* --------------------------------------FAQ SECTION-------------------- */}
+
+
       <div className="mt-20">
         <p className="text-4xl text-blue-700 font-bold ml-10 ">FAQ</p>
 
