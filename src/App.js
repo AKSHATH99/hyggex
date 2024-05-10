@@ -1,18 +1,31 @@
 import logo from "./logo.svg";
 import "./App.css";
+import SideMenu from "./SideMenu";
+import { useState } from "react";
+
+
 // import myImage from "./28.png"
 function App() {
+  const [menu , togglemenu]= useState(false);
+
   return (
     <div className=" phone:ml-0 ml-16">
       {/* HEADER */}
       <div className="flex ">
         <img
-          className="w-56 h-20 p-5 "
+          className="w-56 h-20 p-5 phone:w-40 phone:h-16 mt-4 "
           src="https://res.cloudinary.com/do4vytmxm/image/upload/v1695803892/images/Logo_ev7w4u.png"
         />
-        <div className="lg:hidden  ml-28 mt-7">
-          <img  src="/images/hambuger.png"/>
+        <div className="lg:hidden  ml-4  mt-8 hover:cursor-pointer">
+          <img  src="/images/hambuger.png" onClick={()=>togglemenu(!menu)}/>
         </div>
+
+        {menu && (
+        <div className="absolute top-0 right-0 z-50">
+          <SideMenu />
+        </div>
+      )}
+
         <div className=" rounded-lg flex justify-between ml-96 w-max items-center text-xl phone:hidden">
           <p className="ml-2">Home</p>
           <p className="ml-20">Flashcard</p>
